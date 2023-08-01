@@ -1,7 +1,13 @@
 #Bigtin v1 7-31-23
+#vars
 i = 1
-factor = 10
+factor = 256
 answer = 0
-for i in range (1, 6):
+for i in range (1, factor):
     answer = factor / i
-    print(answer)
+    
+    if answer.is_integer():
+        print('---\r',i)
+        print(answer)
+    else:
+        continue
