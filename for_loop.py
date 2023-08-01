@@ -6,8 +6,11 @@ answer = 0
 for i in range (1, factor):
     answer = factor / i
     
-    if answer.is_integer():
+    if factor < factor/2:
+        continue
+    elif answer.is_integer():
         print('---\r',i)
         print(answer)
+    
     else:
         continue
