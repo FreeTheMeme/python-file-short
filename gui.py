@@ -15,5 +15,5 @@ ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=2)
 ttk.Entry().grid(column=0,row=3)
 ttk.Button(frm, text="GO!").grid(column=0,row=2)
 
-#not sure what this but its very important :|
+#not sure what this but its very important :O
 root.mainloop()
