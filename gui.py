@@ -1,4 +1,4 @@
-#bigtin 8/6/23 v0.02
+#bigtin 8/6/23 v0.03
 
 from tkinter import *
 from tkinter import ttk
@@ -11,9 +11,9 @@ i = 1
 factor = 0
 answer = 0
 #the wigets
-ttk.Label(frm, text="v0.01").grid(column=0, row=0)
+ttk.Label(frm, text="v0.03").grid(column=0, row=0)
 ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
-# user input 
+# user input and factoring
 def input_factor():
     factor = int(entry.get())
     for i in range (1, factor):
@@ -22,7 +22,9 @@ def input_factor():
         if factor < factor/2:
             continue
         elif answer.is_integer():
-            ttk.Label
+            ttk.Label(frm, text=i).grid(column=0, row=i + 2)
+            ttk.Label(frm, text=answer).grid(column=1, row=i + 2)
+            print(i,':done')
     
         else:
             continue
