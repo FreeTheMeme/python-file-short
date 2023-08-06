@@ -12,6 +12,7 @@ factor = 0
 answer = 0
 #the wigets
 ttk.Label(frm, text="v0.03").grid(column=0, row=0)
+ttk.Label(frm, text="factors:").grid(column=0, row=2)
 ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
 # user input and factoring
 def input_factor():
@@ -22,8 +23,8 @@ def input_factor():
         if factor < factor/2:
             continue
         elif answer.is_integer():
-            ttk.Label(frm, text=i).grid(column=0, row=i + 2)
-            ttk.Label(frm, text=answer).grid(column=1, row=i + 2)
+            ttk.Label(frm, text=i).grid(column=0, row=i + 3)
+            ttk.Label(frm, text=answer).grid(column=1, row=i + 3)
             print(i,':done')
     
         else:
